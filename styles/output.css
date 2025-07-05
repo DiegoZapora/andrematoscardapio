@@ -26,6 +26,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
@@ -325,9 +327,6 @@
   .bg-zinc-900 {
     background-color: var(--color-zinc-900);
   }
-  .bg-\[url\(\'\/assets\/bg\.png\'\)\] {
-    background-image: url('/assets/bg.png');
-  }
   .bg-cover {
     background-size: cover;
   }
@@ -369,6 +368,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -448,6 +451,8 @@ body {
 }
 header {
   background-image: url(/assets/bg.png);
+  background-size: cover;
+  background-position: center;
 }
 @property --tw-border-style {
   syntax: "*";
